@@ -10,7 +10,6 @@ extension,description,mime_type
 .csh,"C-Shell script",application/x-csh
 .css,"Cascading Style Sheets (CSS)",text/css
 .csv,"Comma-separated values (CSV)",text/csv
-.doc,"Microsoft Word",application/msword
 .eot,"MS Embedded OpenType fonts",application/vnd.ms-fontobject
 .epub,"Electronic publication (EPUB)",application/epub+zip
 .gif,"Graphics Interchange Format (GIF)",image/gif
@@ -40,7 +39,7 @@ extension,description,mime_type
 .svg,"Scalable Vector Graphics (SVG)",image/svg+xml
 .swf,"Small web format (SWF) or Adobe Flash document",application/x-shockwave-flash
 .tar,"Tape Archive (TAR)",application/x-tar
-".tif .tiff","Tagged Image File Format (TIFF)",image/tiff
+.tif,"Tagged Image File Format (TIFF)",image/tiff
 .ts,"Typescript file",application/typescript
 .ttf,"TrueType Font",font/ttf
 .vsd,"Microsoft Visio",application/vnd.visio
@@ -51,10 +50,9 @@ extension,description,mime_type
 .woff,"Web Open Font Format (WOFF)",font/woff
 .woff2,"Web Open Font Format (WOFF)",font/woff2
 .xhtml,XHTML,application/xhtml+xml
-".xls .xlsx","Microsoft Excel","application/vnd.ms-excel application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
 .xml,XML,application/xml
 .xul,XUL,application/vnd.mozilla.xul+xml
 .zip,"ZIP archive",application/zip
-.3gp,"3GPP audio/video container","video/3gpp audio/3gpp if it doesn't contain video"
-.3g2,"3GPP2 audio/video container","video/3gpp2 audio/3gpp2 if it doesn't contain video"
+.3gp,"3GPP audio/video container",video/3gpp
+.3g2,"3GPP2 audio/video container",video/3gpp2
 .7z,"7-zip archive",application/x-7z-compressed

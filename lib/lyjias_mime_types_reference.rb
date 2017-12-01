@@ -40,10 +40,6 @@ module LyjiasMimeTypesReference
   {:extension=>".csv",
    :description=>"Comma-separated values (CSV)",
    :mime_type=>"text/csv"},
- "application/msword"=>
-  {:extension=>".doc",
-   :description=>"Microsoft Word",
-   :mime_type=>"application/msword"},
  "application/vnd.ms-fontobject"=>
   {:extension=>".eot",
    :description=>"MS Embedded OpenType fonts",
@@ -149,7 +145,7 @@ module LyjiasMimeTypesReference
    :description=>"Tape Archive (TAR)",
    :mime_type=>"application/x-tar"},
  "image/tiff"=>
-  {:extension=>".tif .tiff",
+  {:extension=>".tif",
    :description=>"Tagged Image File Format (TIFF)",
    :mime_type=>"image/tiff"},
  "application/typescript"=>
@@ -184,11 +180,6 @@ module LyjiasMimeTypesReference
   {:extension=>".xhtml",
    :description=>"XHTML",
    :mime_type=>"application/xhtml+xml"},
- "application/vnd.ms-excel application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"=>
-  {:extension=>".xls .xlsx",
-   :description=>"Microsoft Excel",
-   :mime_type=>
-    "application/vnd.ms-excel application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"},
  "application/xml"=>
   {:extension=>".xml", :description=>"XML", :mime_type=>"application/xml"},
  "application/vnd.mozilla.xul+xml"=>
@@ -199,14 +190,14 @@ module LyjiasMimeTypesReference
   {:extension=>".zip",
    :description=>"ZIP archive",
    :mime_type=>"application/zip"},
- "video/3gpp audio/3gpp if it doesn't contain video"=>
+ "video/3gpp"=>
   {:extension=>".3gp",
    :description=>"3GPP audio/video container",
-   :mime_type=>"video/3gpp audio/3gpp if it doesn't contain video"},
- "video/3gpp2 audio/3gpp2 if it doesn't contain video"=>
+   :mime_type=>"video/3gpp"},
+ "video/3gpp2"=>
   {:extension=>".3g2",
    :description=>"3GPP2 audio/video container",
-   :mime_type=>"video/3gpp2 audio/3gpp2 if it doesn't contain video"},
+   :mime_type=>"video/3gpp2"},
  "application/x-7z-compressed"=>
   {:extension=>".7z",
    :description=>"7-zip archive",
