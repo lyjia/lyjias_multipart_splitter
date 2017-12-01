@@ -1,8 +1,10 @@
 require "lyjias_multipart_splitter/version"
+require "lyjias_mime_types_reference"
 require "pathname"
 require "securerandom"
 # test with:
 #     p LyjiasMultipartSplitter.split_multipart( IO.binread( "sample/sample.txt" ) )
+#     p LyjiasMultipartSplitter.split_multipart_to_files( IO.binread( "sample/sample.txt" ), purge_content: true, uuid_filename: true )
 # in bin/console
 
 begin
@@ -21,8 +23,6 @@ module LyjiasMultipartSplitter
     # Splits a text stream in multipart/form-data format into a useful hash
     def self.split_multipart(inputtext)
         self.log("Got: '#{inputtext[0..50]}...'")
-
-
 
         part = {filename: nil, name: nil, contenttype: nil, content: nil}
         parts = {}
@@ -88,7 +88,8 @@ module LyjiasMultipartSplitter
         pre = pres[k]
 
         if uuid_filename
-          filename = SecureRandom.uuid
+          ext = LyjiasMimeTypesReference::TYPES[ pre[:contenttype] ][:extension]
+          filename = "#{SecureRandom.uuid}#{ext}"
         else
           filename = pre[:filename]
         end
