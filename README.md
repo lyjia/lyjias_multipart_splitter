@@ -35,6 +35,14 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 MIME Type data is sourced from Mozilla's ["Incomplete List of MIME Types"](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types/Complete_list_of_MIME_types)
 
+## Changelog
+* 0.1.1
+    * Added MIME Types database
+    * Made Splitter aware of MIME Types for setting file extension
+    * Added CSV-to-keyed-hash converter in `etc/`
+* 0.1.0
+    * Initial commit
+
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/lyjias_multipart_splitter.
