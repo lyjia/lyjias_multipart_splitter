@@ -22,6 +22,8 @@ module LyjiasMultipartSplitter
     def self.split_multipart(inputtext)
         self.log("Got: '#{inputtext[0..50]}...'")
 
+
+
         part = {filename: nil, name: nil, contenttype: nil, content: nil}
         parts = {}
 

@@ -10,6 +10,7 @@
 .idea/*
 .travis.yml
 log/*
+*.gem
 
 # rspec failure tracking
 .rspec_status
